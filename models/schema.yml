@@ -6,7 +6,35 @@ sources:
     tables:
       - name: product
         identifier: raw_gz_product
+        description: Type de produits
+        columns:
+          - name: product_id
+            description: identifiant produit (Primary Key)
+          - name: purchase_price
+            description: Prix d'achat
       - name: sales
         identifier: raw_gz_sales
+        description: Nombre de ventes
+        columns: 
+          - name: date_date
+            description: Date
+          - name: order_id
+            description: Primary key to ship
+          - name: product_id
+            description: identifiant produit(foreign key)
+          - name: revenue
+            description: Recettes
+          - name: quantity
+            description: Quantité 
       - name: ship
         identifier: raw_gz_ship
+        description: Transport
+        columns:
+          - name: order_id
+            description: Numéro de commande (Primary key) 
+          - name: shipping_fee,
+            description: Coût d'expédition 
+          - name: logcost,
+            description: Coût logistique
+          - name: ship_cost
+            description: Coût du navire
