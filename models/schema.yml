@@ -1,4 +1,4 @@
-version : 2
+version: 2
 
 sources:
   - name: dataraw
@@ -21,7 +21,7 @@ sources:
       - name: sales
         identifier: raw_gz_sales
         description: Nombre de ventes
-        columns: 
+        columns:
           - name: date_date
             description: Date
             tests:
@@ -43,7 +43,7 @@ sources:
               - unique
               - not_null
           - name: quantity
-            description: Quantité 
+            description: Quantité
             tests:
               - unique
               - not_null
@@ -55,12 +55,12 @@ sources:
             description: Numéro de commande (Primary key)
             tests:
               - unique
-              - not_null 
+              - not_null
           - name: shipping_fee,
             description: Coût d'expédition
             tests:
               - unique
-              - not_null 
+              - not_null
           - name: logcost,
             description: Coût logistique
             tests:
