@@ -1,7 +1,7 @@
 version : 2
 
 sources:
-  - name: data
+  - name: dataraw
     schema: mydataset
     tables:
       - name: product

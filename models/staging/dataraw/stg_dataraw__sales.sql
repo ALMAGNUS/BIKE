@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('data', 'sales') }}
+    select * from {{ source('dataraw', 'sales') }}
 
 ),
 
